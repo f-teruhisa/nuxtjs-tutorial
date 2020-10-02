@@ -38,6 +38,6 @@ export default {
     transpile: [/^element-ui/],
   },
   generate: {
-    fallback: true
+    fallback: true,
   },
 }

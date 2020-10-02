@@ -1,9 +1,7 @@
 <template>
   <div>
     <el-container>
-      <el-header height="60px">
-        TODO APP
-      </el-header>
+      <el-header height="60px">TODO APP</el-header>
       <nuxt />
     </el-container>
   </div>
@@ -12,7 +10,7 @@
 <style>
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-  Roboto, 'Helvetica Neue', Arial, sans-serif;
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 1.2rem;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -23,8 +21,8 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
 }
@@ -35,3 +33,4 @@ html {
   align-items: center;
   color: white;
 }
+</style>
