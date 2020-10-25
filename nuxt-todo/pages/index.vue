@@ -38,6 +38,8 @@
 </template>
 
 <script>
+import { mapActions, mapGetters } from 'vuex'
+
 export default {
   data() {
     return {
@@ -56,7 +58,17 @@ export default {
       },
     }
   },
+  computed: {
+    ...mapGetters({
+      todoList: 'todo/todoList',
+    }),
+  },
   methods: {
+    ...mapActions({
+      add: 'todo/handleAdd',
+      check: 'todo/handleCheck',
+      remove: 'todo/handleRemove',
+    }),
     handleAdd() {
       this.todoList.push({
         title: this.form.input,
